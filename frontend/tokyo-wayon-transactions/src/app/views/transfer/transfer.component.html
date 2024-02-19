@@ -1,0 +1,45 @@
+<main class="mymain">
+    <section class="mysection">
+        <div class="mycontainer" *ngIf="flagAllTransactions" >
+            <div  *ngFor="let tranfer of transferList"  >
+                <div class="mytransaction" *ngIf="tranfer.aproved">
+                    <span>id: {{tranfer.id}}</span>
+                    <span>name: {{tranfer.nameReceiver}}</span>
+                    <span>amount: {{tranfer.amount}}</span>
+                    <span>fee: {{tranfer.fee}}</span>
+                    <span>date: {{tranfer.date}}</span>
+        
+                    <button (click)="removeTransaction(tranfer.id)">remove</button>
+                </div>
+            </div>
+        </div>
+        <div class="mycontainer" *ngIf="!flagAllTransactions" >
+            <div class="myform">
+                <form>
+                    <label for="faccount">Receiver Account:</label>
+                    <input type="number"  id="faccount" name="faccount" [(ngModel)]="accountReceiver" min="100000000000" max="999999999999"><br><br>
+                    <label for="lamount">Amount:</label>
+                    <input type="number"  id="lamount" name="lamount" [(ngModel)]="amountSend"><br><br>
+                    <label for="ldate">Date Scheduled:</label>
+                    <input type="date"  id="ldate" name="ldate" [(ngModel)]="scheduledDate"><br><br>
+                    
+                    <div class="horizontalFlex">
+                        <input type="button" value="request" (click)="createTransaction()">
+                        <!-- <input type="button" value="B" > -->
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+
+<aside class="myaside" >
+    <h2>User:  {{user.name}} </h2>
+    <nav>
+        <div class="verticalFlex">
+            <button (click)="hideAllTransactions()" style="margin:10px">New Transaction</button>
+            
+            <button (click)="showAllTransactions()" style="margin:10px">All Transactions</button>
+        </div>
+    </nav>
+</aside>

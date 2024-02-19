@@ -1,0 +1,31 @@
+<div style="display: flex;flex-direction: row;">
+    <aside class="myaside" >
+        <h2>Search Users</h2>
+        <div class="myform">
+            <form>
+                <label for="faccount">Account:</label>
+                <input type="number" [(ngModel)]="userAccount" id="faccount" name="faccount" min="100000000000" max="999999999999"><br><br>
+                <label for="lkey">Key:</label>
+                <input type="number" [(ngModel)]="userKey" id="lkey" name="lkey" min="1000" max="9999"><br><br>
+                
+                <div class="horizontalFlex">
+                    <input type="button" value="Search" (click)="searchUser()">
+                    <input type="button" value="Login" >
+                </div>
+            </form>
+        </div>
+        <!-- Additional content or links go here -->
+    </aside>
+    
+    <div *ngIf="userResponse != null" style="background-color: white;height: 200px;padding: 10px; border-radius: 5%;">
+        <p >Name: {{userResponse!.name}}</p>
+        <p >Account Number: {{userResponse!.account}}</p>
+        <p >Amount Available: {{userResponse!.amount}}</p>
+        
+        
+        <div class="horizontalFlex">
+            <input type="button" value="go back" (click)="schedule('return')">
+            <input type="button" value="transfer" (click)="schedule('transfer')">
+        </div>
+    </div>
+</div>

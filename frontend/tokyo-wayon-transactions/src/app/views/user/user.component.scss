@@ -1,0 +1,25 @@
+.myaside {
+    width: 30%;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    min-height: 300px;
+    margin-right: 50px;
+    border-radius: 0 5% 5% 0;
+  }
+
+  .myform{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .myform>form{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .horizontalFlex{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }

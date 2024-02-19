@@ -1,0 +1,17 @@
+
+.myfooter {
+    /*background-color: #333;*/
+    background: rgb(50, 44, 44);
+    background: linear-gradient(
+      0deg,
+      rgba(50, 44, 44, 1) 27%,
+      rgba(145, 145, 145, 1) 55%,
+      rgba(59, 56, 62, 1) 75%
+    );
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }

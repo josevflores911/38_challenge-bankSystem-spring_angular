@@ -1,0 +1,74 @@
+.mymain {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    /*background-color: red;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);*/
+  }
+  
+  .mysection {
+    margin-bottom: 20px;
+  }
+
+  .myaside {
+    width: 30%;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    min-height: 300px;
+  }
+
+  .mycontainer {
+    width: auto;
+    background: #474651;
+    position: absolute;
+    left: 40%;
+    top: 30%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-radius: 5%;
+    padding: 15px;
+  }
+
+  .mytransaction {
+    
+    height: 150px;
+    background: white;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px;
+    flex-wrap: wrap;
+    border-radius: 5%;
+  }
+
+  .mytransaction>span{
+    margin:5px;
+  }
+
+  
+  .myform{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .myform>form{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .horizontalFlex{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .verticalFlex{
+    display:flex;
+    flex-direction: column;
+  }
