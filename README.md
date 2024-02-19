@@ -65,18 +65,24 @@ proyecto realizado con java y angular para registrar transferencias entre usuari
 </ul>
 
 <p>The database with the initial elements was created within the backend with the name data.sql, where the Flyway framework takes care of executing the queries in the in-memory database.</p>
+<hr>
 
 ![a](https://github.com/josevflores911/42_bank_system-spring_angular/assets/59713685/1d66dc3a-c237-43d4-be89-b30cbfb067fe)
 
 ![a](https://github.com/josevflores911/42_bank_system-spring_angular/assets/59713685/feb11586-07a5-44ff-a261-73b48bacd71c)
+<hr>
 swagger
+<hr>
 ![a](https://github.com/josevflores911/42_bank_system-spring_angular/assets/59713685/4e2ef461-4f0c-4c0d-97f6-7f3d5df64a5e)
 
 ![a](https://github.com/josevflores911/42_bank_system-spring_angular/assets/59713685/9c2cf3d6-48bc-4b8b-9284-bc0234b3f405)
+<hr>
 postman
+<hr>
 ![image](https://github.com/josevflores911/42_bank_system-spring_angular/assets/59713685/dae8225b-c8ae-4420-82a2-20195a46ebfe)
-
+<hr>
 folder
+<hr>
 ![a](https://github.com/josevflores911/42_bank_system-spring_angular/assets/59713685/0af8c825-7662-486f-8590-32ec75dd13d3)
 
 
